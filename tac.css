@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-color: #548687; */
+    background-color: #aaa1c8;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;  /*To have space between boxes */
+}
+.box{
+    background-color:#f7eff2;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 20%;
+    border: none;
+    /* box-shadow: 5px 10px 0px rgb(0,0,0); */
+    box-shadow: 5px 10px 0px black;
+    font-size: 8vmin;
+    color: #3f1193;
+}
+
+#reset-btn{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    background-color: #8a53a0;
+    color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.box:disabled {
+  /* background-color: #b3b2af; */
+  /* background-color: #d6c2c9; or your original color */
+  background-color: #dbbfc9; /* or your original color */
+  color: rgb(255, 255, 255);              /* keep text visible */
+  opacity: 1;                /* prevent greying out */
+      /* optional: shows it's disabled */
+}
+
